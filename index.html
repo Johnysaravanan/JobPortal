@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>LumaPath</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="find-jobs.html">Find Jobs</a>
+                <a href="companies.html">Companies</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn login-btn">Login</a>
+                <a href="register.html" class="btn register-btn">Register</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Dream Job</h1>
+            <p>Where clarity meets opportunity—illuminating your path to a brighter career.</p>
+            <button class="btn register-btn hero-btn" onclick="window.location.href='find-jobs.html'">Apply Now</button>
+        </div>
+    </section>
+
+    <!-- Featured Jobs Section -->
+    <section class="featured-jobs">
+        <div class="section-header">
+            <h2>Featured Jobs</h2>
+        </div>
+        <div class="jobs-grid">
+            <!-- IT Jobs -->
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>Senior Software Engineer</h3>
+                    <p class="company">TechSolutions Inc.</p>
+                    <div class="job-details">
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                        <p class="type"><i class="fas fa-briefcase"></i> Full-time</p>
+                        <p class="salary"><i class="fas fa-dollar-sign"></i> $120,000 - $150,000</p>
+                    </div>
+                </div>
+                <div class="job-actions">
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>Data Scientist</h3>
+                    <p class="company">DataAnalytics Corp</p>
+                    <div class="job-details">
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                        <p class="type"><i class="fas fa-briefcase"></i> Full-time</p>
+                        <p class="salary"><i class="fas fa-dollar-sign"></i> $110,000 - $140,000</p>
+                    </div>
+                </div>
+                <div class="job-actions">
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>DevOps Engineer</h3>
+                    <p class="company">CloudTech Solutions</p>
+                    <div class="job-details">
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+                        <p class="type"><i class="fas fa-briefcase"></i> Full-time</p>
+                        <p class="salary"><i class="fas fa-dollar-sign"></i> $100,000 - $130,000</p>
+                    </div>
+                </div>
+                <div class="job-actions">
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+            </div>
+
+            <!-- Non-IT Jobs -->
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>Marketing Manager</h3>
+                    <p class="company">BrandBoost</p>
+                    <div class="job-details">
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Chicago, IL</p>
+                        <p class="type"><i class="fas fa-briefcase"></i> Full-time</p>
+                        <p class="salary"><i class="fas fa-dollar-sign"></i> $80,000 - $100,000</p>
+                    </div>
+                </div>
+                <div class="job-actions">
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>Financial Analyst</h3>
+                    <p class="company">Global Finance</p>
+                    <div class="job-details">
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Boston, MA</p>
+                        <p class="type"><i class="fas fa-briefcase"></i> Full-time</p>
+                        <p class="salary"><i class="fas fa-dollar-sign"></i> $85,000 - $110,000</p>
+                    </div>
+                </div>
+                <div class="job-actions">
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+            </div>
+
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>HR Specialist</h3>
+                    <p class="company">PeopleFirst</p>
+                    <div class="job-details">
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Seattle, WA</p>
+                        <p class="type"><i class="fas fa-briefcase"></i> Full-time</p>
+                        <p class="salary"><i class="fas fa-dollar-sign"></i> $70,000 - $90,000</p>
+                    </div>
+                </div>
+                <div class="job-actions">
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies Section -->
+    <section class="companies" id="companies">
+        <h2>Top Companies</h2>
+        <div class="companies-grid">
+            <!-- Row 1 -->
+            <div class="company-row">
+                <img src="Assets/microsoft.png" alt="Microsoft" class="company-icon">
+                <img src="Assets/google.png" alt="Google" class="company-icon">
+                <img src="Assets/apple-logo.png" alt="Apple" class="company-icon">
+                <img src="Assets/linkedin.png" alt="LinkedIn" class="company-icon">
+                <img src="Assets/twitter.png" alt="Twitter" class="company-icon">
+                <img src="Assets/social.png" alt="Amazon" class="company-icon">
+                <img src="Assets/meta.png" alt="Meta" class="company-icon">
+            </div>
+            <!-- Row 2 -->
+            <div class="company-row">
+                <img src="Assets/netflix.png" alt="Netflix" class="company-icon">
+                <img src="Assets/acrobat.png" alt="Adobe" class="company-icon">
+                <img src="Assets/intel.png" alt="Intel" class="company-icon">
+                <img src="Assets/ibm.png" alt="IBM" class="company-icon">
+                <img src="Assets/oracle.png" alt="Oracle" class="company-icon">
+                <img src="Assets/cisco.png" alt="Cisco" class="company-icon">
+                <img src="Assets/salesforce.png" alt="Salesforce" class="company-icon">
+            </div>
+            <!-- Row 3 -->
+            <div class="company-row">
+                <img src="Assets/uber.png" alt="Uber" class="company-icon">
+                <img src="Assets/airbnb.png" alt="Airbnb" class="company-icon">
+                <img src="Assets/music.png" alt="Spotify" class="company-icon">
+                <img src="Assets/slack.png" alt="Slack" class="company-icon">
+                <img src="Assets/pepsi (1).png" alt="Pepsi" class="company-icon">
+                <img src="Assets/bmw.png" alt="BMW" class="company-icon">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CareerConnect</h3>
+                <p>Your gateway to career opportunities</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="find-jobs.html">Find Jobs</a></li>
+                    <li><a href="companies.html">Companies</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@careerconnect.com</p>
+                <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Career Street, Job City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 CareerConnect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

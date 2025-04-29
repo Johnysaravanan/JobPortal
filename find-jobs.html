@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Jobs - JobPortal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>LumaPath</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="find-jobs.html" class="active">Find Jobs</a>
+                <a href="companies.html">Companies</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn login-btn">Login</a>
+                <a href="register.html" class="btn register-btn">Register</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="overlay"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="find-jobs-page">
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search for jobs, companies, or keywords">
+                    <button class="search-btn">Search</button>
+                </div>
+                <div class="filters">
+                    <select id="job-type">
+                        <option value="">All Job Types</option>
+                        <option value="full-time">Full Time</option>
+                        <option value="part-time">Part Time</option>
+                        <option value="contract">Contract</option>
+                        <option value="internship">Internship</option>
+                    </select>
+                    <select id="location">
+                        <option value="">All Locations</option>
+                        <option value="remote">Remote</option>
+                        <option value="onsite">On-site</option>
+                        <option value="hybrid">Hybrid</option>
+                    </select>
+                    <select id="category">
+                        <option value="">All Categories</option>
+                        <option value="it">IT & Software</option>
+                        <option value="non-it">Non-IT</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jobs Grid -->
+        <section class="jobs-section">
+            <div class="jobs-grid">
+                <!-- IT Jobs -->
+                <div class="job-card" data-category="it">
+                    <div class="job-info">
+                        <h3>Senior Software Engineer</h3>
+                        <p class="company">Tech Solutions Inc.</p>
+                        <div class="job-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+                            <p class="type"><i class="fas fa-briefcase"></i> Full Time</p>
+                            <p class="salary"><i class="fas fa-dollar-sign"></i> $120,000 - $150,000</p>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="it">
+                    <div class="job-info">
+                        <h3>AI Tool Integration</h3>
+                        <p class="company">Yuga Yatra Pvt Ltd.</p>
+                        <div class="job-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i>Remote</p>
+                            <p class="type full-time"><i class="fas fa-briefcase"></i>Internship</p>
+                            <p class="salary"><i class="fas fa-dollar-sign"></i>$100</p>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="it">
+                    <div class="job-info">
+                        <h3>Frontend Developer</h3>
+                        <p class="company">WebCraft Studios</p>
+                        <div class="job-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                            <p class="type full-time"><i class="fas fa-briefcase"></i> Full Time</p>
+                            <p class="salary"><i class="fas fa-dollar-sign"></i> $90,000 - $110,000</p>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="it">
+                    <div class="job-info">
+                        <h3>DevOps Engineer</h3>
+                        <p class="company">Cloud Systems</p>
+                        <div class="job-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Hybrid</p>
+                            <p class="type full-time"><i class="fas fa-briefcase"></i> Full Time</p>
+                            <p class="salary"><i class="fas fa-dollar-sign"></i> $100,000 - $130,000</p>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="it">
+                    <div class="job-info">
+                        <h3>Data Scientist</h3>
+                        <p class="company">Data Insights</p>
+                        <div class="job-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+                            <p class="type full-time"><i class="fas fa-briefcase"></i> Full Time</p>
+                            <p class="salary"><i class="fas fa-dollar-sign"></i> $110,000 - $140,000</p>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="it">
+                    <div class="job-info">
+                        <h3>Cybersecurity Analyst</h3>
+                        <p class="company">Secure Systems</p>
+                        <div class="job-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+                            <p class="type full-time"><i class="fas fa-briefcase"></i> Full Time</p>
+                            <p class="salary"><i class="fas fa-dollar-sign"></i> $95,000 - $120,000</p>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+
+                <!-- Non-IT Jobs -->
+                <div class="job-card" data-category="non-it">
+                    <div class="job-info">
+                        <h3>Marketing Manager</h3>
+                        <p class="company">Growth Marketing</p>
+                        <div class="job-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Chicago, IL</p>
+                            <p class="type full-time"><i class="fas fa-briefcase"></i> Full Time</p>
+                            <p class="salary"><i class="fas fa-dollar-sign"></i> $80,000 - $100,000</p>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="non-it">
+                    <div class="job-info">
+                        <h3>HR Specialist</h3>
+                        <p class="company">People First</p>
+                        <div class="job-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Boston, MA</p>
+                            <p class="type full-time"><i class="fas fa-briefcase"></i> Full Time</p>
+                            <p class="salary"><i class="fas fa-dollar-sign"></i> $65,000 - $85,000</p>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="non-it">
+                    <div class="job-info">
+                        <h3>Financial Analyst</h3>
+                        <p class="company">Global Finance</p>
+                        <div class="job-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> New York, NY</p>
+                            <p class="type full-time"><i class="fas fa-briefcase"></i> Full Time</p>
+                            <p class="salary"><i class="fas fa-dollar-sign"></i> $75,000 - $95,000</p>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="non-it">
+                    <div class="job-info">
+                        <h3>Sales Representative</h3>
+                        <p class="company">Sales Pro</p>
+                        <div class="job-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+                            <p class="job-type"><i class="fas fa-briefcase"></i> Full Time</p>
+                            <p class="salary"><i class="fas fa-dollar-sign"></i> $60,000 - $80,000 + Commission</p>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+
+                <div class="job-card" data-category="non-it">
+                    <div class="job-info">
+                        <h3>Customer Success Manager</h3>
+                        <p class="company">Customer First</p>
+                        <div class="job-details">
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Hybrid</p>
+                            <p class="type part-time"><i class="fas fa-briefcase"></i> Part Time</p>
+                            <p class="salary"><i class="fas fa-dollar-sign"></i> $70,000 - $90,000</p>
+                        </div>
+                    </div>
+                    <div class="job-actions">
+                        <button class="apply-btn">Apply Now</button>
+                    </div>
+                </div>
+
+                <!-- Add more job cards here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Your trusted partner in finding the perfect job opportunity.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="find-jobs.html">Find Jobs</a></li>
+                    <li><a href="companies.html">Companies</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@jobportal.com</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Job Street, City, Country</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 JobPortal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="find-jobs.js"></script>
+</body>
+</html> 
