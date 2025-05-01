@@ -6,7 +6,7 @@ A modern, responsive job portal website built with HTML, CSS, and JavaScript tha
  <div align="center">
   <a href="https://johnysaravanan.github.io/JobPortal/" style="text-decoration: none;">
    Link
-  </a>
+  </a> for this project
 </div>
 
 ## 🌟 Features
