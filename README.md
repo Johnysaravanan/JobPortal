@@ -82,10 +82,10 @@ JobPortal/
 ├── index.html
 ├── styles.css
 ├── scripts/
-│   └── main.js
+│   └── script.js
+│   └── auth.js
 ├── assets/
-│   ├── images/
-│   └── icons/
+│   └── icons
 └── README.md
 ```
 
