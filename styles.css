@@ -539,8 +539,9 @@ main {
 
 .companies-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    margin-top: 2rem;
 }
 
 .company-card {
@@ -1359,7 +1360,6 @@ main {
 }
 
 .companies-grid {
-    display: flex;
     flex-direction: column;
     gap: 2rem;
     max-width: 1200px;
@@ -1529,5 +1529,17 @@ main {
     .apply-btn {
         padding: 0.625rem;
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .companies-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .companies-grid {
+        grid-template-columns: 1fr;
     }
 } 
