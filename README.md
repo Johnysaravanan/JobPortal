@@ -46,16 +46,6 @@ A modern, responsive job portal website built with HTML, CSS, and JavaScript tha
 - A modern web browser
 - Basic understanding of HTML, CSS, and JavaScript
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/JobPortal.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd JobPortal
-   ```
-3. Open `index.html` in your web browser
 
 ## 📱 Responsive Design
 
